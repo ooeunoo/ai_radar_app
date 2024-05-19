@@ -1,6 +1,5 @@
 import Image from 'next/image'
 import { Platform } from '../types/platforms'
-import useTranslation from 'next-translate/useTranslation'
 
 export default function PlatformTileGrid({
   PlatformsByCategory,
@@ -9,8 +8,6 @@ export default function PlatformTileGrid({
   PlatformsByCategory: { [category: string]: Platform[] }
   hideCategories?: boolean
 }) {
-  const { t, lang } = useTranslation('common')
-
   return (
     <>
       {Object.keys(PlatformsByCategory).map((category) => (
@@ -47,7 +44,7 @@ export default function PlatformTileGrid({
                     <h3 className="mb-2 text-xl text-scale-1100 transition-colors group-hover:text-scale-1200">
                       {p.title}
                     </h3>
-                    <p className="text-sm text-scale-900">{t(p.description)}</p>
+                    <p className="text-sm text-scale-900">{p.description}</p>
                   </div>
                 </div>
               </a>
