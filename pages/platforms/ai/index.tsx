@@ -56,9 +56,7 @@ function IntegrationPlatformsPage(props: Props) {
   const meta_title = 'AI Radar'
   const meta_description = `AI 작곡, AI 노래, AI 도구 모음`
   const meta_guide = 'Find your favorite AI tools'
-  const meta_keywords = 'ai, ai 작곡, chatgpt'
-  const meta_robots = ''
-  const meta_charset = 'utf-8'
+  const meta_keywords = 'ai, ai 작곡, ai 서비스, ai 노래'
 
   const [search, setSearch] = useState('')
   const [debouncedSearchTerm] = useDebounce(search, 300)
