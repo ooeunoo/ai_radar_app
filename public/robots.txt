@@ -1,5 +1,9 @@
-
+# *
 User-agent: *
-Disallow:
-Sitemap: https://mycodings.fly.dev/sitemap.xml
-Sitemap: https://mycodings.fly.dev/sitemap-0.xml
+Allow: /
+
+# Host
+Host: https://ai-radar-app.vercel.app/platforms/ai
+
+# Sitemaps
+Sitemap: https://ai-radar-app.vercel.app/platforms/ai/sitemap.xml

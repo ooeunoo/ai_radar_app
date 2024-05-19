@@ -49,9 +49,14 @@ function IntegrationPlatformsPage(props: Props) {
   )
   const router = useRouter()
 
-  const meta_title = 'Find your favorite AI tools'
-  const meta_description = `ai ai radar, ai tools, `
-  const meta_keywords = 'ai ai radar,'
+  const meta_name = 'ai'
+  const meta_url = 'https://ai-radar-app.vercel.app/platforms/ai'
+  const meta_image_url =
+    'https://sysojoabbrcjypzekqok.supabase.co/storage/v1/object/public/app/logo.png'
+  const meta_title = 'AI Radar'
+  const meta_description = `AI 작곡, AI 노래, AI 도구 모음`
+  const meta_guide = 'Find your favorite AI tools'
+  const meta_keywords = 'ai, ai 작곡, chatgpt'
   const meta_robots = ''
   const meta_charset = 'utf-8'
 
@@ -102,24 +107,24 @@ function IntegrationPlatformsPage(props: Props) {
   return (
     <>
       <Head>
-        <title>{meta_title} | AI Radar</title>
+        <title>{meta_title}</title>
         <meta name="description" content={meta_description}></meta>
-        <meta name="keywords" content="키워드 여러 개 나열" />
+        <meta name="keywords" content={meta_keywords} />
         <meta name="robots" content="index, follow" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta charSet="utf-8" />
-        <meta property="og:site_name" content="사이트 이름" />
+        <meta property="og:site_name" content={meta_name} />
         <meta property="og:locale" content="ko_KR" />
-        <meta property="og:title" content="웹사이트 타이틀" />
-        <meta property="og:description" content="웹사이트 상세 설명" />
+        <meta property="og:title" content={meta_title} />
+        <meta property="og:description" content={meta_description} />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="웹사이트 url 주소" />
-        <meta property="og:image" content="웹사이트 이미지 url 주소" />
-        <meta property="og:image:alt" content="웹사이트 이미지 alt 텍스트" />
+        <meta property="og:url" content={meta_url} />
+        <meta property="og:image" content={meta_image_url} />
+        <meta property="og:image:alt" content={meta_title} />
         <meta property="og:image:type" content="image/png" />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta
+        {/* <meta
           property="article:published_time"
           content="2024-01-14T11:35:00+07:00"
         />
@@ -130,22 +135,19 @@ function IntegrationPlatformsPage(props: Props) {
         <meta
           property="article:author"
           content="https://www.linkedin.com/in/myname"
-        />
-        <meta name="twitter:card" content="대형 이미지에 대한 요약 설명" />
-        <meta name="twitter:site" content="@mycodings" />
-        <meta name="twitter:creator" content="@mycodings" />
+        /> */}
+        {/* <meta name="twitter:card" content={meta_title} />
+        <meta name="twitter:site" content="@airadar" />
+        <meta name="twitter:creator" content="@airadar" />
         <meta name="twitter:title" content="웹사이트 제목" />
         <meta name="twitter:description" content="웹사이트 상세 설명" />
-        <meta name="twitter:image" content="웹사이트 이미지 url 주소" />
+        <meta name="twitter:image" content="웹사이트 이미지 url 주소" /> */}
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Layout>
         <SectionContainer className="space-y-16">
           <div>
-            <h1 className="h1">{meta_title}</h1>
-            <h2 className="hidden text-xl text-scale-900">
-              {meta_description}
-            </h2>
+            <h1 className="h1">{meta_guide}</h1>
           </div>
           {/* Title */}
           <div className="grid space-y-12 md:gap-8 lg:grid-cols-12 lg:gap-16 lg:space-y-0 xl:gap-16">

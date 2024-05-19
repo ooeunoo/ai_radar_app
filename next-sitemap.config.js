@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://example.com',
+  siteUrl: 'https://ai-radar-app.vercel.app/platforms/ai',
   generateRobotsTxt: true, // (optional)
   // ...other options
 }
