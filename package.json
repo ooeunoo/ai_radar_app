@@ -1,7 +1,7 @@
 {
-  "name": "ai",
+  "name": "airadar",
   "version": "1.0.0",
-  "description": "Supabase's Open Source Platform Gallery Example",
+  "description": "AI Radar",
   "license": "MIT",
   "scripts": {
     "dev": "next dev",
@@ -14,7 +14,7 @@
     "classnames": "^2.3.1",
     "marked": "^4.0.12",
     "next": "^12.3.0",
-    "next-translate": "^2.0.6",
+    "next-sitemap": "^4.2.3",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "swiper": "^8.0.7",
