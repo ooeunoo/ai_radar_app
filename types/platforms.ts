@@ -5,7 +5,7 @@ export interface Platform {
   developer: string
   title: string
   description: string
-  logo: string
+  logo?: string
   images: string[]
   overview: string
   website: string

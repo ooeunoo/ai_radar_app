@@ -36,7 +36,10 @@ export default function PlatformTileGrid({
                       width={40}
                       height={40}
                       className="h-10 w-10 rounded-full bg-gray-300"
-                      src={p.logo}
+                      src={
+                        p.logo ??
+                        'https://sysojoabbrcjypzekqok.supabase.co/storage/v1/object/public/platforms/noimage.webp'
+                      }
                       alt={p.title}
                     />
                   </div>
